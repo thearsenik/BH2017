@@ -23,7 +23,7 @@ function crawl(url) {
        parseAllPropositions($);
      }
      if (nbResponse === urls.length) {
-       console.log(allPropositions);
+       console.log(JSON.stringify(allPropositions));
      }
   });
 }
@@ -35,13 +35,12 @@ function parseAllPropositions($, word) {
     var obj = {};
     obj.title = $(element).find(".flex-title").text();
 
-    // Si on a déjà récupéré cette proposition, on l'ignore
-    if (arrayContains(allPropositions, obj.title)) {
-      return;
-    }
-
     obj.description = $(element).find(".ExtendedPropal > *:first-child > span").text();
-    allPropositions.push(obj);
+
+    // Si on a déjà récupéré cette proposition, on l'ignore
+    if (!arrayContains(allPropositions, obj.title) && obj.description !== "") {
+      allPropositions.push(obj);
+    }
   });
 }
 
