@@ -12,5 +12,5 @@
   },
   "scripts": {
     "gen": "node crawler.js"
-  },
+  }
 }

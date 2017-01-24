@@ -1,0 +1,11 @@
+{
+  "name": "bh2017-rasterize",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "rasterize.js",
+  "author": "Naël MSKINE",
+  "license": "ISC",
+  "scripts": {
+    "gen": "phantom rasterize.js"
+  }
+}
