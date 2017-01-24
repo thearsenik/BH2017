@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="bh2017">
+  <head>
+    <title>Programme de Benoit HAMON 2017</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body ng-controller="MainController as ctrl">
+    <header>
+      Programme complet de Benoit HAMON pour 2017
+    </header>
+    <div ng-repeat="proposition in ctrl.propositions">
+      {{$index + 1}} - {{proposition.title}}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="main.controller.js"></script>
+  </body>
+</html>

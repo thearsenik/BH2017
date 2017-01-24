@@ -1,0 +1,14 @@
+{
+  "name": "bh2017-web-page",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "web-page-server.js",
+  "author": "Naël MSKINE",
+  "license": "ISC",
+  "scripts": {
+    "start": "node web-page-server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
