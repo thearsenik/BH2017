@@ -1,5 +1,80 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: #d51317;
+}
+
 header {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
+  height: 100px;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+div[id="propositions"] {
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.prop-block:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.prop-title {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+}
+
+.prop-title-content {
+    font-size: 18px;
+    font-weight: bold;
+    color: #263286;
+}
+
+.prop-number {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    background-color: #263286;
+    border-radius: 25px;
+    padding: 5px;
+    min-width: 24px;
+    max-width: 24px;
+    text-align: center;
+    margin-right: 14px;
+}
+
+.bh-photo {
+    float: right;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.bh-photo {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    height: 262px;
+    min-height: 262px;
+    max-height: 262px;
+}
+
+.bh-photo > img {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
 }
