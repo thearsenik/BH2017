@@ -1,6 +1,6 @@
 # BH2017
 
-Ensemble de scripts qui permettent de récupérer de récupérer le programme de Benoit HAMON pour 2017 et d'en générer un PDF.
+Ensemble de scripts qui permettent de récupérer le programme de Benoit HAMON pour 2017 et d'en générer un PDF.
 
 
 Pré-requis:
