@@ -28,16 +28,24 @@ div[id="propositions"] {
     margin-bottom: 14px;
 }
 
+.prop-block {
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: avoid;
+}
+
 .prop-title {
     display: flex;
     flex-direction: row;
     align-items:flex-end;
+    flex-flow: nowrap;
 }
 
 .prop-title-content {
     font-size: 18px;
     font-weight: bold;
     color: #263286;
+    flex: 1;
 }
 
 .prop-number {

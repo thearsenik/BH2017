@@ -8,23 +8,23 @@
 <body ng-controller="MainController as ctrl">
     <header>
         <!-- <div class="fr-flag"> -->
-            <!-- <img src="flag-url"/> -->
+        <!-- <img src="flag-url"/> -->
         <!-- </div> -->
         <p>Programme complet de Benoit HAMON pour 2017</p>
         <!-- <div class="bh-photo"> -->
-            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Benoit_Hamon_meeting_Saint-Denis_-_face_%28cropped%29.jpg/800px-Benoit_Hamon_meeting_Saint-Denis_-_face_%28cropped%29.jpg"/> -->
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Benoit_Hamon_meeting_Saint-Denis_-_face_%28cropped%29.jpg/800px-Benoit_Hamon_meeting_Saint-Denis_-_face_%28cropped%29.jpg"/> -->
         <!-- </div> -->
     </header>
     <div id="propositions">
         <div class="prop-block" ng-repeat="proposition in ctrl.propositions">
-        <div class="prop-title">
-            <div class="prop-number">
-                {{$index + 1}}
+            <div class="prop-title">
+                <div class="prop-number">
+                    {{$index + 1}}
+                </div>
+                <div class="prop-title-content">
+                    {{proposition.title}}
+                </div>
             </div>
-            <div class="prop-title-content">
-                {{proposition.title}}
-            </div>
-        </div>
             <div class="prop-description">
                 {{proposition.description}}
             </div>
