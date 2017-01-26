@@ -6,9 +6,9 @@
   "author": "Naël MSKINE",
   "license": "ISC",
   "scripts": {
-    "gen": "phantomjs rasterize.js http://localhost:3000/ programme-bh2017.pdf"
+    "start": "node_modules/.bin/phantomjs rasterize.js http://localhost:3000/ ../programme-bh2017.pdf A4"
   },
   "dependencies": {
-    "phantomjs": "^2.1.7"
+    "phantomjs-prebuilt": "^2.1.14"
   }
 }

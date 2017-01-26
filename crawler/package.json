@@ -11,6 +11,6 @@
     "request": "^2.65.0"
   },
   "scripts": {
-    "gen": "node crawler.js"
+    "start": "node crawler.js > ../web-page/www/data/propositions.json"
   }
 }
