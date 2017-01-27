@@ -15,9 +15,17 @@ header {
     border-bottom: solid 1px #ccc;
     margin-bottom: 25px;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    flex-pack: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    max-width: 100%;
 }
 
 div[id="propositions"] {
@@ -37,9 +45,17 @@ div[id="propositions"] {
 }
 
 .prop-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align:end;
+    -ms-flex-align:end;
     align-items:flex-end;
+    -ms-flex-flow: nowrap;
     flex-flow: nowrap;
 }
 
@@ -47,10 +63,13 @@ div[id="propositions"] {
     font-size: 18px;
     font-weight: bold;
     color: #263286;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 
 .prop-number {
+    box-sizing: content-box;
     font-size: 20px;
     font-weight: bolder;
     color: white;
@@ -90,5 +109,6 @@ div[id="propositions"] {
     max-height: 250px;
     margin-left: -8px;
     margin-top: -8px;
+    -ms-flex-item-align: start;
     align-self: flex-start;
 }
