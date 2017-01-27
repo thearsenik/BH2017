@@ -11,14 +11,12 @@ header {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    height: 175px;
     border-bottom: solid 1px #ccc;
     margin-bottom: 25px;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-pack: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -26,6 +24,16 @@ header {
     -ms-flex-align: center;
     align-items: center;
     max-width: 100%;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+header > p {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 div[id="propositions"] {
@@ -83,12 +91,12 @@ div[id="propositions"] {
 }
 
 .bh-photo {
-    width: 114px;
-    min-width: 114px;
-    max-width: 114px;
-    height: 150px;
-    min-height: 150px;
-    max-height: 150px;
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    height: 131px;
+    min-height: 131px;
+    max-height: 131px;
 }
 
 .bh-photo > img, .fr-flag > img {
@@ -101,14 +109,13 @@ div[id="propositions"] {
 }
 
 .fr-flag {
-    width: 190px;
-    min-width: 190px;
-    max-width: 190px;
-    height: 250px;
-    min-height: 250px;
-    max-height: 250px;
-    margin-left: -8px;
-    margin-top: -8px;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    min-width: 95px;
+    max-width: 95px;
+    height: 125px;
+    min-height: 125px;
+    max-height: 125px;
 }
